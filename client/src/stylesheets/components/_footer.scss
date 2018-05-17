@@ -10,8 +10,9 @@
     &__resume{
       font-size: 5rem;
       left: 58%;
-      top: 5rem;
+      top: 1.2rem;
       position: absolute;
+      text-decoration: none;
     }
 
 
@@ -30,3 +31,13 @@
   }
 
 
+  .resume-text{
+    font-size: 2rem;
+    position: absolute;
+    top: 6rem;
+    left : -1rem;
+  }
+
+  .resume-text .a{
+    text-decoration: none;
+  }

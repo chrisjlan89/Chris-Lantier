@@ -10,9 +10,14 @@ import React from "react";
                 <div className="footer--main">
                    
                     <section className="footer--main__resume">
+                    <a href ="https://www.dropbox.com/s/8ne2k76d94m3qtc/Resume.docx?dl=1">
                     <i class="fa fa-file-text-o" aria-hidden="true">
-                        <a href ="https://www.dropbox.com/s/8ne2k76d94m3qtc/Resume.docx?dl=1">Resume</a>
+                        
                       </i>
+                      </a>
+                      <div className="resume-text">
+                        Resume
+                      </div>
                     </section>
 
                     <section className="footer--main__github">
@@ -24,7 +29,7 @@ import React from "react";
                     </section>
                        
                     <section className="footer--main__linkedin">
-                    <a href ="https://github.com/chrisjlan89?tab=repositories">
+                    <a href ="https://www.linkedin.com/in/chris-lantier/">
                     <img src="/src/assets/img/linkedin-in-for-screen/LinkedIn [in] for Screen/2-Color/In-2C-66px-R.png">
                     
                       

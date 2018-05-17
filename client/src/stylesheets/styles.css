@@ -178,8 +178,9 @@ body {
   .footer--main__resume {
     font-size: 5rem;
     left: 58%;
-    top: 5rem;
-    position: absolute; }
+    top: 1.2rem;
+    position: absolute;
+    text-decoration: none; }
   .footer--main__github {
     position: absolute;
     left: 38%;
@@ -188,6 +189,15 @@ body {
     position: absolute;
     left: 48%;
     top: 2rem; }
+
+.resume-text {
+  font-size: 2rem;
+  position: absolute;
+  top: 6rem;
+  left: -1rem; }
+
+.resume-text .a {
+  text-decoration: none; }
 
 @keyframes moveInLeft {
   0% {
