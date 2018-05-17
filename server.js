@@ -35,11 +35,11 @@ app.listen(PORT, function(){
 
 
 // Set up promises with mongoose
-mongoose.Promise = global.Promise;
+//mongoose.Promise = global.Promise;
  // mongoose.set('debug', false) // enable logging collection methods + arguments to the console
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/GamingGurus"
+//mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/GamingGurus"
 
-);
+//);
 
 
