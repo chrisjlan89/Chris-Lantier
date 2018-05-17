@@ -30,7 +30,7 @@ app.use(express.static(path.join(__dirname, "client")))
 
 app.listen(PORT, function(){
     console.log(`Server now on port ${PORT}`)
-})
+});
 
 
 
