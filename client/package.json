@@ -1,0 +1,21 @@
+{
+  "proxy": "http://localhost:8080/",
+  "name": "chris-lantier",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "node-sass": "^4.9.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "compile:sass": "node-sass  ./src/stylesheets/main.scss ./src/stylesheets/styles.css -w"
+  }
+}
+
+

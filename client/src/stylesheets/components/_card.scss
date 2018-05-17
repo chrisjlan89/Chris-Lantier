@@ -1,0 +1,152 @@
+.card {
+
+    // functionality 
+    top :35rem;
+    left: 3rem;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height : 45rem;
+    z-index:20;
+    float: left;
+
+
+    &:hover{
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+    
+    &__side {
+         
+        
+        font-size: 2rem;
+        height : 45rem;
+        transition: all .8s ease;
+        //position: absolute;
+        top : 33rem;
+        left: 3rem;;
+        width: 100%;
+       // backface-visibility: hidden;
+        border-radius: 5px;
+        // IMGAE  IS OVERFLOWING THE PARENT HIDING OUR BORDER RADIOUS BUT NOT 
+        // WITH THIS PROPERTY
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba(#000, .15);   
+    
+       
+        &--front--1 {
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+
+         }
+
+         &--front--2{
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+
+         }
+
+         &--front--3 {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+
+         }
+    
+   
+    
+    }
+   
+
+   
+    // FRONT SIDE STYLING
+    &__picture{
+        background-size: cover;
+        height: 18rem;
+        background-blend-mode: soft-light;
+        -webkit-clip-path: polygon(0 0 , 100% 0, 100% 85%, 0 100%);
+        // First is top left corner then next is 100% on X direction and no movement on y
+
+
+        clip-path: polygon(0 0 , 100% 0, 100% 85%, 0 100%);
+         &--1{
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+             url('/src/assets/img/fabian-grohs-423591-unsplash.jpg');
+         } 
+         
+         &--2{
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
+            url('/src/assets/img/fabian-grohs-423591-unsplash.jpg')
+         }
+
+
+         &--3{
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
+            url('/src/assets/img/fabian-grohs-423591-unsplash.jpg')
+         }
+
+      
+    }
+    &__heading {
+        font-size: 2.2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color : $color-white;
+        position: absolute;
+        top : 6rem;
+        right: 2rem;
+        text-align: right;
+        width : 70%;
+        z-index: 32;
+    }
+
+    &__heading-span {
+        color : $color-white;
+        padding: .7rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1 {
+            
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-secondary-light, .85), 
+            rgba($color-secondary-dark, .85));
+        }
+
+
+        &--2 {
+            background-image: linear-gradient(to right /bottom, 
+            rgba($color-tertiary-light, .85), 
+            rgba($color-tertiary-dark, .85));
+        }
+
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-primary-light, .85), 
+            rgba($color-primary-dark, .85));
+        }
+
+
+
+    }
+
+            
+    &__details {
+        color: $color-white;
+        ul {
+            list-style:  none;
+            width: 80%;
+           
+            margin : 0 auto;
+            margin-top: 5rem;
+            
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child){
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+               
+            }
+        }
+    }
+
+}

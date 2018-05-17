@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before  {
+    margin : 0;
+    padding : 0;
+    box-sizing: inherit;
+}
+
+html{
+    // this defines what 1 rem is
+  font-size : 62.5%;
+  height : 100%;
+}
+
+body {
+   height: 100%;
+    box-sizing: border-box;
+    padding : 10rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.page {
+    flex: 1 0 auto;
+
+      
+}
