@@ -22,3 +22,56 @@ left: 30%;
 
 }
 
+
+@media only screen and (max-width: 600px) {
+    .header {
+        height: 70vh;
+        background-image: linear-gradient(to right bottom,
+         rgba($color-primary-dark, 0.8),
+         rgba($color-primary-light, 0.8)), 
+           url('/src/assets/img/fabian-grohs-423591-unsplash.jpg');
+        background-size: cover;
+        background-position: top;
+        -webkit-clip-path: polygon(0 0 , 100% 0, 100% 45vh, 0 100% );
+        clip-path: polygon(0 0 , 100% 0, 100% 45vh, 0 100% );
+        position: relative;
+        z-index: 5;
+    &--primary {
+    
+    animation: moveInLeft .5s ease-out .75s;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    
+    
+    }
+    
+    }
+}
+
+
+@media only screen and (max-width: 468px) {
+    .header {
+        height: 70vh;
+        background-image: linear-gradient(to right bottom,
+         rgba($color-primary-dark, 0.8),
+         rgba($color-primary-light, 0.8)), 
+           url('/src/assets/img/fabian-grohs-423591-unsplash.jpg');
+        background-size: 100%;
+        background-position: top;
+        -webkit-clip-path: polygon(0 0 , 100% 0, 100% 45vh, 0 100% );
+        clip-path: polygon(0 0 , 100% 0, 100% 45vh, 0 100% );
+        position: relative;
+        z-index: 5;
+    &--primary {
+    
+    animation: moveInLeft .5s ease-out .75s;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    
+    
+    }
+    
+    }
+}

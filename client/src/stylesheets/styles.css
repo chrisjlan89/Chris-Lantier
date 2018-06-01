@@ -45,8 +45,31 @@ body {
 .page {
   flex: 1 0 auto; }
 
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 62.5%;
+    height: 100%; }
+  body {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10rem;
+    display: flex;
+    flex-direction: column; }
+  .page {
+    flex: 1 0 auto; } }
+
+@media only screen and (max-width: 468px) {
+  html {
+    font-size: 62.5%;
+    height: 100%; }
+  body {
+    height: 100%;
+    box-sizing: border-box; }
+  .page {
+    flex: 1 0 auto; } }
+
 .card {
-  top: 35rem;
+  top: 32rem;
   left: 3rem;
   perspective: 150rem;
   -moz-perspective: 150rem;
@@ -120,6 +143,157 @@ body {
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
 
+@media only screen and (max-width: 600px) {
+  .card {
+    top: 32rem;
+    left: 3rem;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 45rem;
+    z-index: 20;
+    float: left; }
+    .card:hover {
+      transform: translateY(-1.5rem) scale(1.03); }
+    .card__side {
+      font-size: 2rem;
+      height: 45rem;
+      transition: all .8s ease;
+      top: 33rem;
+      left: 3rem;
+      width: 100%;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      .card__side--front--1 {
+        background-image: linear-gradient(to right bottom, #fbb900, #ff7730); }
+      .card__side--front--2 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+      .card__side--front--3 {
+        background-image: linear-gradient(to right bottom, #6e37a3, #260347); }
+    .card__picture {
+      background-size: cover;
+      height: 18rem;
+      background-blend-mode: soft-light;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+      .card__picture--1 {
+        background-image: linear-gradient(to right bottom, #fbb900, #ff7730), url("/src/assets/img/fabian-grohs-423591-unsplash.jpg"); }
+      .card__picture--2 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("/src/assets/img/fabian-grohs-423591-unsplash.jpg"); }
+      .card__picture--3 {
+        background-image: linear-gradient(to right bottom, #6e37a3, #260347), url("/src/assets/img/fabian-grohs-423591-unsplash.jpg"); }
+    .card__heading {
+      font-size: 2.2rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: #fff;
+      position: absolute;
+      top: 6rem;
+      right: 2rem;
+      text-align: right;
+      width: 70%;
+      z-index: 32; }
+    .card__heading-span {
+      color: #fff;
+      padding: .7rem 1.5rem;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone; }
+      .card__heading-span--1 {
+        background-image: linear-gradient(to right bottom, rgba(251, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+      .card__heading-span--2 {
+        background-image: linear-gradient(to right/bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+      .card__heading-span--3 {
+        background-image: linear-gradient(to right bottom, rgba(110, 55, 163, 0.85), rgba(38, 3, 71, 0.85)); }
+    .card__details {
+      color: #fff; }
+      .card__details ul {
+        list-style: none;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 5rem; }
+        .card__details ul li {
+          text-align: center;
+          font-size: 1.5rem;
+          padding: 1rem; }
+          .card__details ul li:not(:last-child) {
+            border-bottom: 1px solid #eee; } }
+
+@media only screen and (max-width: 468px) {
+  .card {
+    top: 27rem;
+    margin-bottom: 3rem;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 45rem;
+    z-index: 20;
+    float: none; }
+    .card:hover {
+      transform: translateY(-1.5rem) scale(1.03); }
+    .card__side {
+      font-size: 2rem;
+      height: 45rem;
+      transition: all .8s ease;
+      top: 27rem;
+      width: 100%;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      .card__side--front--1 {
+        background-image: linear-gradient(to right bottom, #fbb900, #ff7730); }
+      .card__side--front--2 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+      .card__side--front--3 {
+        background-image: linear-gradient(to right bottom, #6e37a3, #260347); }
+    .card__picture {
+      background-size: cover;
+      height: 18rem;
+      background-blend-mode: soft-light;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+      .card__picture--1 {
+        background-image: linear-gradient(to right bottom, #fbb900, #ff7730), url("/src/assets/img/fabian-grohs-423591-unsplash.jpg"); }
+      .card__picture--2 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("/src/assets/img/fabian-grohs-423591-unsplash.jpg"); }
+      .card__picture--3 {
+        background-image: linear-gradient(to right bottom, #6e37a3, #260347), url("/src/assets/img/fabian-grohs-423591-unsplash.jpg"); }
+    .card__heading {
+      font-size: 2.2rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: #fff;
+      position: absolute;
+      top: 6rem;
+      right: 2rem;
+      text-align: right;
+      width: 70%;
+      z-index: 32; }
+    .card__heading-span {
+      color: #fff;
+      padding: .7rem 1.5rem;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone; }
+      .card__heading-span--1 {
+        background-image: linear-gradient(to right bottom, rgba(251, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+      .card__heading-span--2 {
+        background-image: linear-gradient(to right/bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+      .card__heading-span--3 {
+        background-image: linear-gradient(to right bottom, rgba(110, 55, 163, 0.85), rgba(38, 3, 71, 0.85)); }
+    .card__details {
+      color: #fff; }
+      .card__details ul {
+        list-style: none;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 5rem; }
+        .card__details ul li {
+          text-align: center;
+          font-size: 1.5rem;
+          padding: 1rem; }
+          .card__details ul li:not(:last-child) {
+            border-bottom: 1px solid #eee; } }
+
 .area {
   color: #fff;
   position: absolute;
@@ -144,6 +318,54 @@ body {
   width: 15em;
   z-index: 2000; }
 
+@media only screen and (max-width: 600px) {
+  .area {
+    color: #fff;
+    position: absolute;
+    top: 23%;
+    left: 27%;
+    z-index: 500; }
+    .area__portrait {
+      margin-right: 2rem;
+      float: left;
+      height: 15rem;
+      width: 15em;
+      border-radius: 25rem;
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%); }
+    .area__text {
+      margin-right: 25%; }
+  .chris-por {
+    float: left;
+    width: 15em;
+    z-index: 2000; } }
+
+@media only screen and (max-width: 468px) {
+  .area {
+    color: #fff;
+    position: absolute;
+    top: 23%;
+    left: 6%;
+    z-index: 500; }
+    .area__portrait {
+      margin-right: 2rem;
+      float: left;
+      height: 12rem;
+      width: 12rem;
+      border-radius: 25rem;
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%); }
+    .area__text {
+      margin-right: 20%; }
+  .chris-por {
+    float: left;
+    width: 12rem;
+    z-index: 2000; } }
+
 .body {
   margin-top: -36vh;
   height: 90vh;
@@ -154,6 +376,30 @@ body {
   clip-path: polygon(234% -25%, 100% 0, 100% 90vh, -195% 100%);
   position: relative;
   z-index: 5; }
+
+@media only screen and (max-width: 600px) {
+  .body {
+    margin-top: -36vh;
+    height: 90vh;
+    background-image: linear-gradient(to right bottom, rgba(236, 95, 13, 0.8), rgba(107, 39, 0, 0.8)), url("/src/assets/img/rawpixel-com-250087-unsplash.jpg");
+    background-size: cover;
+    background-position: top;
+    -webkit-clip-path: polygon(225% -30%, 100% 0, 100% 85vh, -180% 100%);
+    clip-path: polygon(234% -25%, 100% 0, 100% 90vh, -195% 100%);
+    position: relative;
+    z-index: 5; } }
+
+@media only screen and (max-width: 468px) {
+  .body {
+    margin-top: -22vh;
+    height: 310vh;
+    background-image: linear-gradient(to right bottom, rgba(236, 95, 13, 0.8), rgba(107, 39, 0, 0.8)), url("/src/assets/img/rawpixel-com-250087-unsplash.jpg");
+    background-size: cover;
+    background-position: top;
+    -webkit-clip-path: polygon(-25% 10%, 100% 0, 100% 310vh, -195% 100%);
+    clip-path: polygon(-25% 10%, 100% 0, 100% 310vh, -195% 100%);
+    position: relative;
+    z-index: 5; } }
 
 .header {
   height: 70vh;
@@ -169,6 +415,38 @@ body {
     position: absolute;
     top: 15%;
     left: 30%; }
+
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 70vh;
+    background-image: linear-gradient(to right bottom, rgba(38, 3, 71, 0.8), rgba(110, 55, 163, 0.8)), url("/src/assets/img/fabian-grohs-423591-unsplash.jpg");
+    background-size: cover;
+    background-position: top;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
+    position: relative;
+    z-index: 5; }
+    .header--primary {
+      animation: moveInLeft .5s ease-out .75s;
+      position: absolute;
+      top: 15%;
+      left: 30%; } }
+
+@media only screen and (max-width: 468px) {
+  .header {
+    height: 70vh;
+    background-image: linear-gradient(to right bottom, rgba(38, 3, 71, 0.8), rgba(110, 55, 163, 0.8)), url("/src/assets/img/fabian-grohs-423591-unsplash.jpg");
+    background-size: 100%;
+    background-position: top;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
+    position: relative;
+    z-index: 5; }
+    .header--primary {
+      animation: moveInLeft .5s ease-out .75s;
+      position: absolute;
+      top: 15%;
+      left: 10%; } }
 
 .footer--main {
   flex-shrink: 0;
@@ -198,6 +476,25 @@ body {
 
 .resume-text .a {
   text-decoration: none; }
+
+@media only screen and (max-width: 468px) {
+  .footer--main {
+    flex-shrink: 0;
+    position: relative; }
+    .footer--main__resume {
+      font-size: 5rem;
+      left: 75%;
+      top: 1.2rem;
+      position: absolute;
+      text-decoration: none; }
+    .footer--main__github {
+      position: absolute;
+      left: 7%;
+      top: 2rem; }
+    .footer--main__linkedin {
+      position: absolute;
+      left: 40%;
+      top: 2rem; } }
 
 @keyframes moveInLeft {
   0% {
@@ -237,3 +534,25 @@ body {
   font-size: 2rem;
   font-weight: 500;
   font-family: "Bangers", cursive; }
+
+@media only screen and (max-width: 600px) {
+  .header--primary {
+    color: #fff;
+    font-family: "Bangers", cursive;
+    font-weight: 300;
+    font-size: 10rem; }
+  .self-description {
+    font-size: 3.5rem;
+    font-weight: 500;
+    font-family: "Bangers", cursive; } }
+
+@media only screen and (max-width: 468px) {
+  .header--primary {
+    color: #fff;
+    font-family: "Bangers", cursive;
+    font-weight: 300;
+    font-size: 3rem; }
+  .self-description {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "Bangers", cursive; } }

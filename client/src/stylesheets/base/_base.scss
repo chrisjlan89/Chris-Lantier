@@ -26,3 +26,68 @@ body {
 
       
 }
+
+
+
+
+@media only screen and (max-width: 600px) {
+    html{
+        // this defines what 1 rem is
+      font-size : 62.5%;
+      height : 100%;
+
+    }
+    
+    body {
+       height: 100%;
+        box-sizing: border-box;
+        padding : 10rem;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .page {
+        flex: 1 0 auto;
+    
+          
+    }
+    
+    
+    
+    }
+
+
+
+    
+@media only screen and (max-width: 468px) {
+    html{
+        // this defines what 1 rem is
+      font-size : 62.5%;
+      height : 100%;
+    //  width: 380px;
+    }
+
+    
+    body {
+       height: 100%;
+        box-sizing: border-box;
+        
+        //display: flex;
+        //flex-direction: column;
+      //  width : 380px;
+    
+    }
+    
+    .page {
+        flex: 1 0 auto;
+    
+          
+    }
+    
+    
+    
+    }
+
+    
+    

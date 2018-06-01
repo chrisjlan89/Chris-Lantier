@@ -30,3 +30,85 @@
     width: 15em;
     z-index: 2000;
 }
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .area {
+        color: $color-white;
+        position: absolute;
+        top: 23%;
+        left: 27%;
+        z-index: 500;
+       
+        &__portrait {
+            margin-right:  2rem;
+            float: left;
+            height: 15rem;
+            width: 15em;
+            border-radius: 25rem;
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            -webkit-clip-path: circle(50% at 50% 50%);
+        }
+       
+        &__text{
+            
+            margin-right: 25%;
+        }
+       
+       }
+       
+       .chris-por {
+           float: left;
+           
+           width: 15em;
+           z-index: 2000;
+       }
+    
+    }
+
+
+
+
+    
+@media only screen and (max-width: 468px) {
+    .area {
+        color: $color-white;
+        position: absolute;
+        top: 23%;
+        left: 6%;
+        z-index: 500;
+       
+        &__portrait {
+            margin-right:  2rem;
+            float: left;
+            height: 12rem;
+            width: 12rem;
+            border-radius: 25rem;
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            -webkit-clip-path: circle(50% at 50% 50%);
+        }
+       
+        &__text{
+            
+            margin-right: 20%;
+        }
+       
+       }
+       
+       .chris-por {
+           float: left;
+           
+           width: 12rem;
+           z-index: 2000;
+       }
+    
+    }
+
+
+    

@@ -41,3 +41,39 @@
   .resume-text .a{
     text-decoration: none;
   }
+
+  @media only screen and (max-width: 468px) {
+
+  }
+
+
+  @media only screen and (max-width: 468px) {
+    .footer--main {
+      flex-shrink: 0;
+      
+           position: relative;
+  
+      &__resume{
+        font-size: 5rem;
+        left: 75%;
+        top: 1.2rem;
+        position: absolute;
+        text-decoration: none;
+      }
+  
+  
+      &__github {
+       position: absolute;
+       left: 7%;
+       top: 2rem;
+      }
+  
+  
+      &__linkedin {
+        position: absolute;
+        left: 40%;
+        top: 2rem;
+      }
+    }
+
+  }
