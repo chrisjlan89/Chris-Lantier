@@ -1,6 +1,9 @@
+//font-family: 'Julius Sans One', sans-serif;
+//font-family: 'Arbutus Slab', serif;
+
 .header--primary {
     color : $color-white;
-    font-family: $font-bangers;
+    font-family: $font-arbutus;
     font-weight: 300;
     font-size: 10rem;
 }
@@ -8,7 +11,7 @@
 .self-description {
  font-size: 2rem;
  font-weight:500;
-font-family: $font-bangers;
+font-family: $font-arbutus;
 }
 
 
@@ -17,7 +20,7 @@ font-family: $font-bangers;
 @media only screen and (max-width: 600px) {
     .header--primary {
         color : $color-white;
-        font-family: $font-bangers;
+        font-family: $font-arbutus;
         font-weight: 300;
         font-size: 10rem;
     }
@@ -25,7 +28,7 @@ font-family: $font-bangers;
     .self-description {
      font-size: 3.5rem;
      font-weight:500;
-    font-family: $font-bangers;
+    font-family: $font-arbutus;
     }
     
     }
@@ -35,7 +38,7 @@ font-family: $font-bangers;
     @media only screen and (max-width: 468px) {
         .header--primary {
             color : $color-white;
-            font-family: $font-bangers;
+            font-family: $font-arbutus;
             font-weight: 300;
             font-size: 3rem;
         }
@@ -43,7 +46,7 @@ font-family: $font-bangers;
         .self-description {
          font-size: 1.2rem;
          font-weight:500;
-        font-family: $font-bangers;
+        font-family: $font-arbutus;
         }
         
         }

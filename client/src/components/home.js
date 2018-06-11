@@ -23,7 +23,7 @@ class Home extends Component {
         card2: {
             heading: "card__heading-span card__heading-span--2",
             headingText : "ESPN Article Scraper",
-            cardText: ['stuff here feature', "Simple UI for accesibilty", 'MongoDB wtih "associations" allowing user to save and edit notes'],
+            cardText: ['Retrives up to date articles', "Simple UI for accesibilty", 'MongoDB wtih "associations" allowing user to save and edit notes'],
             cardBody: "card__side card__side--front--2",
             cardImg : "card__picture card__picture--2",
             cardLink : "https://chrislan-mongo-scrape.herokuapp.com/"
