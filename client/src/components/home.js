@@ -33,7 +33,7 @@ class Home extends Component {
         card3: {
             heading: "card__heading-span card__heading-span--3",
             headingText : "Genuine Gaming Gurus",
-            card : 'card3Only',
+            
             cardBody: "card__side card__side--front--3 card3Target",
             cardText: ["Built On React", "MongoDB", "Dynamic Twitch Components & Authentication"], 
 
