@@ -11,7 +11,7 @@ import React from "react";
           
                 <div className="col-sm-3">
                 <a href={props.cardProps.cardLink}>
-                    <div className="card">
+                    <div className={props.cardProps.card ? props.cardProps.card : 'card'}>
                     <div className={props.cardProps.cardBody}>
                     <div className={props.cardProps.cardImg}>
                      &nbsp;
@@ -21,13 +21,14 @@ import React from "react";
                                     
                         </h4>
                         <div className="card__details">
-                                         <ul>
-                                             <li>{props.cardProps.cardText[0]}</li>
-                                             <li>{props.cardProps.cardText[1]} </li>
-                                             
-                                            
-                                             <li>{props.cardProps.cardText[2]}</li>
-                                        </ul>
+                        <ul>
+                        {  props.cardProps.cardText.map((text, index) => (
+                                <li key={text}>{text}</li>
+                        ))
+                      
+
+                        }
+                        </ul>       
                                      </div>
              
                     </div>

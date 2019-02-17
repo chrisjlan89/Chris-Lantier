@@ -26,7 +26,7 @@ font-family: $font-arbutus;
     }
     
     .self-description {
-     font-size: 3.5rem;
+     font-size: 1.2rem;
      font-weight:500;
     font-family: $font-arbutus;
     }
@@ -41,10 +41,13 @@ font-family: $font-arbutus;
             font-family: $font-arbutus;
             font-weight: 300;
             font-size: 3rem;
+            text-align: center;
+            margin-left: 2.5rem;
         }
         
         .self-description {
-         font-size: 1.2rem;
+          width: 100%;
+         font-size: 1.1rem;
          font-weight:500;
         font-family: $font-arbutus;
         }

@@ -222,18 +222,18 @@
             clip-path: polygon(0 0 , 100% 0, 100% 85%, 0 100%);
              &--1{
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
-                 url('/src/assets/img/fabian-grohs-423591-unsplash.jpg');
+                 url('/src/assets/img/lifeO.png');
              } 
              
              &--2{
                 background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
-                url('/src/assets/img/fabian-grohs-423591-unsplash.jpg')
+                url('/src/assets/img/scraper.png')
              }
     
     
              &--3{
                 background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
-                url('/src/assets/img/fabian-grohs-423591-unsplash.jpg')
+                url('/src/assets/img/gamingguru.png')
              }
     
           
@@ -382,18 +382,18 @@
                 clip-path: polygon(0 0 , 100% 0, 100% 85%, 0 100%);
                  &--1{
                     background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
-                     url('/src/assets/img/fabian-grohs-423591-unsplash.jpg');
+                     url('/src/assets/img/lifeO.png');
                  } 
                  
                  &--2{
                     background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
-                    url('/src/assets/img/fabian-grohs-423591-unsplash.jpg')
+                    url('/src/assets/img/scraper.png')
                  }
         
         
                  &--3{
                     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
-                    url('/src/assets/img/fabian-grohs-423591-unsplash.jpg')
+                    url('/src/assets/img/gamingguru.png')
                  }
         
               
@@ -466,7 +466,26 @@
             }
         
         }
+
+      .card3Only{ 
+        top :27rem;
         
+        margin-bottom: 3rem;
+        perspective: 150rem;
+        -moz-perspective: 150rem;
+        position: relative;
+        height : 45rem;
+        z-index:20;
+        float: none;
+        width : 85%;
+        margin-left: 8%;
+        border-radius: $color-white 5px;
+        // IMGAE  IS OVERFLOWING THE PARENT HIDING OUR BORDER RADIOUS BUT NOT 
+        // WITH THIS PROPERTY
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba(#000, .15);  
+    
+      }
         
         
         

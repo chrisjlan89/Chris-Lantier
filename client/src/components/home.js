@@ -16,7 +16,7 @@ class Home extends Component {
             cardText : ["Fully Featured Full-Stack App", "mySQL database with associations", "Intergrated Facebook Authentication, weeding out user's without integrity"],
             cardBody: "card__side card__side--front--1",
             cardImg : "card__picture card__picture--1",
-            cardLink : "http://lifeoverflow.us/"
+            cardLink : "https://life-overflowed.herokuapp.com/"
 
         },
 
@@ -33,12 +33,13 @@ class Home extends Component {
         card3: {
             heading: "card__heading-span card__heading-span--3",
             headingText : "Genuine Gaming Gurus",
-
-            cardBody: "card__side card__side--front--3",
+            card : 'card3Only',
+            cardBody: "card__side card__side--front--3 card3Target",
             cardText: ["Built On React", "MongoDB", "Dynamic Twitch Components & Authentication"], 
 
             cardImg : "card__picture card__picture--3",
-            cardLink : "https://gaminggurus.herokuapp.com/"
+            cardLink : "https://gaminggurus.herokuapp.com/",
+            
 
         }
     }
